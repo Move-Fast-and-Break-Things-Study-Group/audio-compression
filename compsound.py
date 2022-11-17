@@ -3,8 +3,8 @@ import soundfile as sf
 import numpy as np
 import matplotlib.pyplot as plt
 
-mp3File = "C:\Codes\compression_sound\Input_Data\mp3_1.mp3"
-wavFile = "C:\Codes\compression_sound\Input_Data\wav_1.wav"
+mp3File = "Input_Data\mp3_1.mp3"
+wavFile = "Input_Data\wav_1.wav"
 
 # Convert .wav to .mp3                                                            
 audio = AudioSegment.from_mp3(mp3File)
@@ -34,8 +34,8 @@ print("f0 : {} Hz".format(int(f0)))
 # Displaying the spectrum with a vertical line for f0
 
 #First we define the names of the output files
-wavCompressedFile = "C:\Codes\compression_sound\Output_Data\wav_audio_compressed.wav"
-mp3CompressedFile = "C:\Codes\compression_sound\Output_Data\mp3_audio_compressed.mp3"
+wavCompressedFile = "Output_Data\wav_audio_compressed.wav"
+mp3CompressedFile = "Output_Data\mp3_audio_compressed.mp3"
 #Then we define the downsampling factor
 D = int(Fs / f0)
 print("Downsampling factor : {}".format(D))
